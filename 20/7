@@ -1,0 +1,108 @@
+import requests
+import sqlite3 as sql
+import json
+from random import randint
+
+con = sql.connect('test_recipe_03_db')
+c = con.cursor()
+
+# ID set is used to ensure all recipes have unique ID
+IDS : {-1}
+keshet_ID = "3c29f155"
+keshet_KEY = "51273edd95cf3efae15a13d9c5a3efe3"
+URL = f'https://api.edamam.com/search?/app_id=${keshet_ID}&app_key=${keshet_KEY}'
+
+"""
+=========================================================
+RECIPE APP:
+===============
+"""
+
+
+def main():
+    """
+    Thes program allows user to search for recipe online that fit hir\s date limits and Allergy restrictions ,
+    Using an Adamam API. It also allows the user to save lokup info for favorite
+    recipes into a detabase.
+    """
+
+    foodCategory = int(input
+    (((
+    '''
+    What do you want to make ?
+    pic your choice 
+    1) salad Enter,
+    2) fish Enter,
+    3) soup Enter,
+    4) unsweetened pie Enter,
+    5) filled pastry Enter,
+    6) meat Enter,
+    7) chke Enter,
+    8) cookie & biscuit Enter,
+    9) pancake Enter,
+    '''
+    ))))
+    print(foodCategory)
+    C.close()
+
+def main():
+    """
+    The app will ask the user What is his Health restrictions
+    """
+
+    health = input(((
+        '''
+        What are you or the diner Health restrictions
+        pic your choice
+        The app will repeat the question until you're done,Wen you do enters x
+        A) "Sugar-Conscious",
+        B) "Keto-Friendly",
+        C) "Pescatarian",
+        D) "Gluten-Free",
+        E) "Wheat-Free",
+        F) "Egg-Free",
+        G) "Peanut-Free",
+        H) "Tree-Nut-Free",
+        I) "Soy-Free",
+        J) "Shellfish-Free",
+        K) "Pork-Free",
+        L) "Red-Meat-Free",
+        M) "Celery-Free",
+        N) "Mustard-Free",
+        O) "Sesame-Free",
+        p) "Lupine-Free",
+        Q) "Mollusk-Free",
+        R) "Alcohol-Free",
+        S) "Immuno-Supportive",
+        '''
+    )))
+
+    while len(health) != X:
+         print('f"You have request a recipe for (foodCategory) without(health): ', ' '.join(health[:-1]))
+
+    """
+    Search recipe that meets our request from API.
+    """
+
+def encode_recipe():
+
+     with open('response.json', 'r') as json_data:
+        data = json.load(json_data)
+        for r in data['hits']:
+                def __init__(self, (foodCategory),
+                    (health):
+                    self.foodCategory = foodCategory
+                    self.health = health)
+
+           print(r)
+
+
+
+
+ #       print(response.json())
+
+
+if __name__ == '__main__':
+
+
+    encode_recipe()
